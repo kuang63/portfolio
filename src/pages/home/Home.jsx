@@ -1,7 +1,10 @@
 import heroImg from '../../assets/hero.png';
+import inkkioLogo from '../../assets/inkkio-logo.svg';
 import '../home/home.css';
 import { useNavigate } from 'react-router-dom';
 import Topbar from '../../components/topbar/Topbar';
+import ProjectBox from '../../components/project_box/ProjectBox'
+import WorkBox from '../../components/work_box/WorkBox'
 
 function Home() {
     return (
@@ -19,14 +22,14 @@ function Home() {
         </section>
         <section>
           <h1>Personal Projects</h1>
+          <div className = "projects">
+            <ProjectBox title = "Inkkio" description = "A website that lets users customize and send virtual cards to their loved ones." techstack = {["React", "AWS", "Node.js"]} year = "2026" link = "https://www.inkkio.com" github = "https://github.com/kuang63/inkkio" image = {inkkioLogo}></ProjectBox>
+          </div>
         </section>
         <section>
           <h1>Work Experience</h1>
             <p>Currently seeking internships</p>
-            <div className = "job-title-and-date">
-              <p>Machine Learning Intern @ Cerbrec</p>
-              <p>March 2025 - June 2025</p>
-            </div>
+            <WorkBox title = "Machine Learning Intern" techstack = {["Python", "Scikit-learn"]} year = "March - June 2025"></WorkBox>
         </section>
         <footer>
           

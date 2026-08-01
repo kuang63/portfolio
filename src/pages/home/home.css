@@ -8,3 +8,7 @@
   text-align: left;
 }
 
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
